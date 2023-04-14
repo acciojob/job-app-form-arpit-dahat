@@ -10,41 +10,41 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form method="POST">
+<form method="post">
 	<label for="name">Name*</label>
-	<input type="text" id="name" required>
+	<input type="text" id="name" name="name" required>
 
 	<label for="email">Email*</label>
-	<input type="email" id="email" required>
+	<input type="email" id="email" name="email" required>
 
-	<div>
-		<label for="gender">Gender*</label>
-	</div>
+	
+	<label for="gender">Gender*</label>
+	<input type="text" id="gender" name="gender" required>
+	
 	<label for="male">Male</label>
 	<input type="radio" id="male" name="gender" value="male" required>
-	<div>
-		<label for="female">Female</label>
-		<input type="radio" id="female" name="gender" value="female" required>
-	</div>
 	
-	<label for="laptop">Laptop Brands</label>
-	<select id="laptop" required>
-		
+	<label for="female">Female</label>
+	<input type="radio" id="female" name="gender" value="female" required>
+	
+	<label for="laptops">Laptop Brands</label>
+	<select id="laptops">
+		<option disabled select>options</option>
 		<option value="Apple">Apple</option>
 		<option value="Asus">Asus</option>
 		<option value="HP">HP</option>
 	</select>
 
 	<label for="age">Age*</label>
-	<input type="number" id="age" required>
+	<input type="text" id="age" name="age" required>
 
 	<label for="dob">DOB*</label>
-	<input type="date" id="dob" required>
+	<input type="date" id="dob" name="dob" required>
 
 	<label for="password">Password*</label>
-	<input type="password" id="password" required>
+	<input type="password" id="password" name="password" required>
 
-	<button>Submit</button>
+	<button>submit</button>
 
 </form>
 
